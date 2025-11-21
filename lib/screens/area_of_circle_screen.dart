@@ -38,7 +38,15 @@ class _AreaOfCircleScreenState extends State<AreaOfCircleScreen> {
               decoration: InputDecoration(
                 labelText: "Enter radius of circle",
                 hintText: "E.g 6",
-                border: OutlineInputBorder(),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.cyan),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.greenAccent),
+                ),
               ),
             ),
             SizedBox(height: 10),

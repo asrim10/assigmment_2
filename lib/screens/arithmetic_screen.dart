@@ -57,6 +57,7 @@ class _ArithmeticScreen extends State<ArithmeticScreen> {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.pink),
                 onPressed: () {
                   setState(() {
                     result = first + second;
