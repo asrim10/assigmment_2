@@ -1,5 +1,6 @@
 import 'package:assigmment_2/screens/area_of_circle_screen.dart';
 import 'package:assigmment_2/screens/arithmetic_screen.dart';
+import 'package:assigmment_2/screens/column_screen.dart';
 import 'package:assigmment_2/screens/flutter_layout_screen.dart';
 import 'package:assigmment_2/screens/palindrome_screen.dart';
 import 'package:assigmment_2/screens/rich_text_screen.dart';
@@ -155,6 +156,27 @@ class DashboardScreen extends StatelessWidget {
                 },
                 child: Text(
                   "FlutterLayout Screen",
+                  style: TextStyle(
+                    color: Colors.cyanAccent,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15,
+                    fontFamily: "Times New Roman",
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ColumnScreen()),
+                  );
+                },
+                child: Text(
+                  "Column Screen",
                   style: TextStyle(
                     color: Colors.cyanAccent,
                     fontWeight: FontWeight.bold,
