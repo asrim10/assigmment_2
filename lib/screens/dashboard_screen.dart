@@ -3,6 +3,7 @@ import 'package:assigmment_2/screens/arithmetic_screen.dart';
 import 'package:assigmment_2/screens/column_screen.dart';
 import 'package:assigmment_2/screens/container_screen.dart';
 import 'package:assigmment_2/screens/flutter_layout_screen.dart';
+import 'package:assigmment_2/screens/image_screen.dart';
 import 'package:assigmment_2/screens/palindrome_screen.dart';
 import 'package:assigmment_2/screens/rich_text_screen.dart';
 import 'package:assigmment_2/screens/simple_interest_screen.dart';
@@ -199,6 +200,27 @@ class DashboardScreen extends StatelessWidget {
                 },
                 child: Text(
                   "Container Screen",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15,
+                    fontFamily: "Times New Roman",
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ImageScreen()),
+                  );
+                },
+                child: Text(
+                  "Image Screen",
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
