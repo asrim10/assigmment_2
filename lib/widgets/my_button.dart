@@ -12,13 +12,13 @@ class MyButton extends StatelessWidget {
       width: double.infinity,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.amber,
+          backgroundColor: Colors.cyan,
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         ),
         onPressed: onPressed,
         child: Text(
           text,
-          style: const TextStyle(color: Colors.white, fontSize: 20),
+          style: const TextStyle(color: Colors.black, fontSize: 20),
         ),
       ),
     );
